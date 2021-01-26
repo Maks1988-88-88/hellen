@@ -2,29 +2,19 @@
 
 <!-- header -->
 
-#fire
-#menu
-#cross
+#fire #menu #cross
 
 <!-- Секция advantages -->
 
-#warranty
-#method
-#program
+#warranty #man #online
 
 <!-- Секция solutions -->
 
-#list
-#online
-#book
-#support
-#man
-#audio
+#list #online #book #support #man #audio
 
 <!-- Секция program-->
 
-#ellipse
-#check
+#ellipse #check
 
 <!-- Секция guarantees -->
 
@@ -32,14 +22,10 @@
 
 <!-- Секция slider-->
 
-#arrow-left
-#arrow-right
-#vk
+#arrow-left #arrow-right #vk
 
 <!-- footer -->
 
-#phone
-#instagram
+#phone #instagram
 
-Названия sprite-svg:
-теже же, но с "icon-"
+Названия sprite-svg: теже же, но с "icon-"
