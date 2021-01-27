@@ -1,0 +1,182 @@
+.section-title {
+  line-height: calc(27 / 20);
+  // text-align: center;
+  @media screen and (min-width: 768px) {
+    line-height: calc(34 / 26);
+  }
+  @media screen and (min-width: 1354px) {
+    line-height: calc(60 / 46);
+  }
+}
+
+//---------------------------------------------------------------------------
+// всё, что выше, нужно отключить при добавлении к проекту
+// скорректировал высоту строки y всех 3х т.перелома
+
+// Как в макете появляется тень? Где её взять в фигме?
+
+.solutions .container {
+  display: none; //  временно
+}
+.solutions{
+  height: 500px;
+  background-color: #E5E5E5;
+}
+
+.problems {
+  position: relative;
+
+  height: 545px;
+  padding: 60px 0;
+  background-color: #111518;
+
+  // border: 10px solid white;
+}
+.problems .section-title {
+  text-align: left;
+}
+.problems-title {
+  // padding-right: 5px;
+  margin-bottom: 27px;
+  // outline: 1px solid white;
+}
+// .problems .section-title {
+//   outline: 1px solid;
+// }
+.inverse {
+  color: #fff;
+}
+.accent {
+  color: rgba(255, 107, 9, 1);
+}
+
+.problems-sheet {
+  // z-index: 999;
+  // display: block;
+  // position: absolute;
+  padding: 20px 14px 20px 30px;
+  // margin-top: 27px;
+
+  background-color: #fff;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.08em;
+
+  // outline: 1px solid violet;
+}
+// .problems-item {
+//   outline: 1px solid violet;
+// }
+.problems-item:not(:last-child) {
+  @media screen and (max-width: 1353px) {
+    margin-bottom: 10px;
+  }
+}
+.problems-dash {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.08em;
+}
+.problems-number {
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  // outline: 1px solid blue;
+}
+// .problems-text {
+//   outline: 1px solid green;
+// }
+//-----------------------Tablet------------------------
+@media screen and (min-width: 768px) and (max-width: 1353px) {
+  .problems {
+    height: 340px;
+    padding: 60px 0;
+  }
+  .problems-sheet {
+    width: 686px;
+    // padding: 30px 47px 26px 96px;
+    padding: 30px 116px 26px 96px;
+  }
+  .problems-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    // outline: 1px solid green;
+  }
+  .problems-item {
+    // display: block;
+    // width: calc(100% - 22px)/2;
+    width: 219px;
+  }
+  .problems-item:nth-child(4) {
+    width: 120px;
+  }
+  .problems-item:nth-child(5) {
+    margin-bottom: 0;
+  }
+  .problems-item:not(:nth-child(2n)) {
+    margin-right: 36px;
+    // 22px;
+  }
+}
+
+//------------------------DT----------------------------
+@media screen and (min-width: 1354px) {
+  .problems .container {
+    padding: 100px 20px 0 20px;
+  }
+  .problems {
+    height: 560px;
+    // padding: 60px 0;
+  }
+  .problems-sheet {
+    width: 100%;
+    padding: 70px 113px 62px;
+  }
+  // ================
+  .problems-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .problems-item {
+    // margin-right: 1px;
+    // display: block;
+    // width: calc(100% - 22px)/2;
+    width: 336px;
+    // width: calc(100% - 3*40px)/3;
+  }
+  .problems-item:nth-child(2),
+  .problems-item:nth-child(5),
+  .problems-item:nth-child(3n) {
+    margin-left: 40px;
+  }
+  .problems-item {
+    margin-bottom: 0px;
+  }
+  .problems-item:nth-child(-n + 3) {
+    // margin-right: 36px;
+    margin-bottom: 32px;
+    // 22px;
+  }
+  // =============
+
+  .problems-dash {
+    font-size: 20px;
+    line-height: calc(33 / 20);
+  }
+  .problems-number {
+    font-size: 20px;
+    line-height: calc(33 / 20);
+  }
+  .problems-text {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+}
