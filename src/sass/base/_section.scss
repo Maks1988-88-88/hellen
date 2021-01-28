@@ -3,15 +3,15 @@
   font-style: normal;
   font-weight: 800; /*откорректировать вариаблами*/
   font-size: 20px;
-  line-height: calc(26/20);
+  line-height: calc(26 / 20);
   letter-spacing: 0.03em;
   
   @media screen and (min-width: 768px) {
     font-size: 26px;
-    line-height: calc(34/26);
+    line-height: calc(34 / 26);
   }
   @media screen and (min-width: 1354px) {
+    line-height: calc(60 / 46);
     font-size: 46px;
-    line-height: calc(60/46);
   }
 }
