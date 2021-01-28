@@ -112,15 +112,16 @@
   color: #b9b9b9;
 }
 
-.slider-text_review {
-  max-height: 300px;
+.slider-text_review [data-readmore-toggle],
+.slider-text_review[data-readmore] {
+  max-height: auto;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.66;
   /* or 167% */
-  max-height: 100px;
+
   text-overflow: auto;
 
   color: #3d3d3d;

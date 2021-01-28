@@ -20,12 +20,12 @@ $(document).ready(function () {
     slidesToShow: 6,
   slidesToScroll: 1,
     asNavFor: '.rev_slider',
-    dots: true,
+    dots: false,
     centerMode: false,
     focusOnSelect: true,
     variableWidth:false,
     arrows: true,
-    infinite: true,
+    infinite: false,
     
 
     responsive: [
