@@ -1,0 +1,100 @@
+.logo {
+  display: inline-block;
+  max-width: 80px;
+  line-height: 50%;
+  color: currentColor;
+}
+
+.logo-title {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
+.logo-icon {
+  display: inline-flex;
+  margin: 0 4px;
+  fill: var(--accent-color);
+
+  width: 14px;
+  height: 19px;
+
+  animation-name: changeFill;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.logo-desc {
+  display: inline-flex;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-desc-accent {
+  margin-right: 4px;
+}
+
+@keyframes changeFill {
+  0% {
+    fill: rgb(255, 98, 0);
+  }
+
+  25% {
+    fill: var(--accent-color);
+  }
+
+  50% {
+    fill: rgb(254, 4, 0);
+  }
+
+  75% {
+    fill: rgb(255, 98, 0);
+  }
+
+  100% {
+    fill: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    max-width: 125px;
+    line-height: 70%;
+  }
+
+  .logo-icon {
+    width: 22px;
+    height: 30px;
+  }
+
+  .logo-title {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.231;
+    letter-spacing: 0.04em;
+  }
+
+  .logo-desc {
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+  }
+
+  .logo-desc-accent {
+    color: var(--accent-color);
+  }
+}
+
+.logo-dark-them {
+  color: var(--white-color);
+  padding-top: 30px;
+}

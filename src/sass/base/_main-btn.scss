@@ -1,0 +1,49 @@
+.main-button {
+  display: block;
+  margin: 0 auto;
+
+  min-width: 260px;
+  height: 48px;
+
+  border: 2px solid var(--accent-color);
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: transparent;
+
+  color: var(--accent-color);
+  cursor: pointer;
+
+  transition: all 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
+}
+
+.main-button-accent {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: var(--white-color);
+  }
+}
+
+@media screen and (min-width: 1354px) {
+  .main-button {
+    min-width: 354px;
+    height: 70px;
+    font-size: 14px;
+    line-height: 1.214px;
+    letter-spacing: 0.14em;
+  }
+}
