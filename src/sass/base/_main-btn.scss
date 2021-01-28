@@ -38,6 +38,22 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .header-main-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-button {
+    display: none;
+  }
+
+  .header-main-btn {
+    margin-right: 40px;
+  }
+}
+
 @media screen and (min-width: 1354px) {
   .main-button {
     min-width: 354px;
@@ -45,5 +61,9 @@
     font-size: 14px;
     line-height: 1.214px;
     letter-spacing: 0.14em;
+  }
+
+  .header-main-btn {
+    margin: 0px;
   }
 }
