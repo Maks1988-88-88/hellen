@@ -1,0 +1,116 @@
+.solutions {
+  padding: 50px 0;
+  margin-top: 180px;
+}
+.colorize {
+  color: #111518;
+} //                Утилита!      рассмотреть внесение цвета в base
+.solutions .section-title {
+  margin-bottom: 30px;
+}
+.solutions-item {
+  height: 280px;
+  padding-top: 30px;
+
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+}
+.solutions-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.solutions-icon {
+  display: block;
+  height: 48px;
+  margin: 0 auto 20px;
+  fill: #ff6b09; /* accent  */
+  //   outline: 1px solid black;
+}
+
+.solutions-title {
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+.solutions-dash {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: calc(33 / 20);
+  text-align: center;
+}
+.solutions-text {
+  padding: 0 7px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(20 / 12);
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: #b9b9b9; //   by maket
+}
+.solutions-item:hover {
+  background-color: #ff6b09;
+  & .solutions-title,
+  & .solutions-dash,
+  & .solutions-text {
+    color: #fff;
+  }
+  & .solutions-icon {
+    fill: #fff;
+  }
+}
+
+//  мои svg:    list    online      BOOK    support     man     audio
+// ========================== Tablet ==============================
+@media screen and (min-width: 768px) {
+  .solutions {
+    margin-top: 160px;
+  }
+  .solutions-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+
+    // outline: 1px solid black;
+  }
+  .solutions-item {
+    //   width: 300px;
+    padding-top: 40px;
+    margin: 10px;
+    height: 334px;
+    width: calc((100% - 2 * 20px) / 2);
+  }
+  .solutions-icon {
+    margin: 0 auto 20px;
+  }
+  .solutions-text {
+    padding: 0 21px;
+  }
+}
+// ========================== DT ==============================
+@media screen and (min-width: 1353px) {
+  .solutions {
+    margin-top: 140px;
+  }
+  // .solutions-item .section-title{
+    //   text-align: left;
+  // }
+  .solutions-item {
+    height: 396px;
+    width: calc((100% - 3 * 20px) / 3);
+  }
+  .solutions-icon {
+    margin: 0 auto 30px;
+  }
+  .solutions-title {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  }
+  .solutions-text {
+    padding: 0 26px;
+
+    font-size: 18px;
+    line-height: calc(28 / 18);
+  }
+}
