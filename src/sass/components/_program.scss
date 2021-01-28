@@ -3,7 +3,7 @@
   position: relative;
   padding-bottom: 560px;
 }
-.secition-advanteges {
+.section-advanteges {
   position: absolute;
 }
 .container__advanteges {
@@ -153,7 +153,6 @@ body {
   content: '—' counter(section) ' ';
   color: var(--accent-color);
 
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -178,7 +177,7 @@ body {
     margin-bottom: 189px;
   }
   .program-list-title::before {
-    left: -68px;
+    left: -69px;
   }
   .program-lesson-item::before {
     height: 740px;
@@ -231,5 +230,108 @@ body {
   }
   .program-images {
     top: 825px;
+  }
+}
+@media screen and (min-width: 1354px) {
+  .section-program {
+    padding-bottom: 250px;
+  }
+  .program-title {
+    font-size: 46px;
+    line-height: 1.3;
+    padding-left: 184px;
+  }
+  .program-list-title {
+    font-size: 30px;
+    line-height: 0.93;
+    margin-top: 92px;
+  }
+  .program-lesson {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .program-list {
+    display: flex;
+    padding-left: 184px;
+    margin-bottom: 164px;
+  }
+  .program-lesson-item {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  .program-advanteges-title {
+    visibility: hidden;
+  }
+  .program-list-title::before {
+    content: '';
+    z-index: 1;
+
+    left: 0px;
+    top: 10px;
+  }
+  .program-lesson-item::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    top: 108px;
+    left: 0px;
+
+    transform: rotate(180deg);
+  }
+  .program-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+  .program-list-lesson {
+    display: flex;
+    flex-direction: column;
+  }
+  .program-sub-list {
+    &:not(:first-child) {
+      margin-left: 0px;
+    }
+  }
+
+  .program-images {
+    left: -88px;
+    top: 550px;
+    z-index: 0;
+  }
+  .program-sub-list {
+    min-width: 240px;
+  }
+  .program-list-advanteges {
+    padding: 70px 40px 70px 40px;
+    justify-content: center;
+  }
+  .container__advanteges {
+    display: block;
+    margin: 0 auto;
+    min-width: 1314px;
+    padding: 0 20px;
+    z-index: 1;
+  }
+  .program-advanteges-item {
+    font-size: 20px;
+    line-height: 1.2;
+    min-width: 356px;
+    margin-left: 0px;
+    margin-right: 40px;
+
+    &::before {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    &:nth-child(2n + 1) {
+      margin-left: 0px;
+    }
+    &:nth-child(2n) {
+      margin-left: 0px;
+    }
+  }
+  .section-advanteges {
+    position: absolute;
+    left: 20px;
   }
 }
