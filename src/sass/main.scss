@@ -6,8 +6,6 @@
 // Стили для файла с примером HTML-фрагмента
 //@import './example';
 
-
-
 //=========utils=============
 @import './utils/variables';
 @import './utils/visually-hidden';
@@ -17,7 +15,6 @@
 @import './base/common';
 @import './base/section';
 @import './base/normalize.css';
-
 
 //=========components=============
 @import './components/header';
@@ -33,3 +30,7 @@
 @import './components/feedback';
 @import './components/form';
 @import './components/footer';
+
+@import '/src/sass/components/slick';
+
+@import '/src/sass/components/slick-theme';
