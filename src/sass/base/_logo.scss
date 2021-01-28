@@ -42,6 +42,11 @@
   margin-right: 4px;
 }
 
+.logo-dark-them {
+  color: var(--white-color);
+  padding-top: 30px;
+}
+
 @keyframes changeFill {
   0% {
     fill: rgb(255, 98, 0);
@@ -92,9 +97,8 @@
   .logo-desc-accent {
     color: var(--accent-color);
   }
-}
 
-.logo-dark-them {
-  color: var(--white-color);
-  padding-top: 30px;
+  .logo-dark-them {
+    padding-top: 39px;
+  }
 }
