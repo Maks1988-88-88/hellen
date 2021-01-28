@@ -1,12 +1,14 @@
 .solutions {
-  padding: 50px 0;
-  margin-top: 180px;
+  padding-bottom: 50px;
+  padding-top: 225px;
 }
 .colorize {
   color: #111518;
 } //                Утилита!      рассмотреть внесение цвета в base
 .solutions .section-title {
   margin-bottom: 30px;
+
+  text-align: center;
 }
 .solutions-item {
   height: 280px;
@@ -22,9 +24,7 @@
   height: 48px;
   margin: 0 auto 20px;
   fill: #ff6b09; /* accent  */
-  //   outline: 1px solid black;
 }
-
 .solutions-title {
   font-size: 14px;
   line-height: calc(20 / 14);
@@ -60,22 +60,17 @@
     fill: #fff;
   }
 }
-
-//  мои svg:    list    online      BOOK    support     man     audio
 // ========================== Tablet ==============================
 @media screen and (min-width: 768px) {
   .solutions {
-    margin-top: 160px;
+    padding-top: 205px;
   }
   .solutions-list {
     display: flex;
     flex-wrap: wrap;
     margin: -10px;
-
-    // outline: 1px solid black;
   }
   .solutions-item {
-    //   width: 300px;
     padding-top: 40px;
     margin: 10px;
     height: 334px;
@@ -84,6 +79,9 @@
   .solutions-icon {
     margin: 0 auto 20px;
   }
+  .solutions-dash{
+    margin: 10px 0;
+  }
   .solutions-text {
     padding: 0 21px;
   }
@@ -91,11 +89,14 @@
 // ========================== DT ==============================
 @media screen and (min-width: 1353px) {
   .solutions {
-    margin-top: 140px;
+    // margin-top: 140px;
+    padding-top: 275px;
   }
-  // .solutions-item .section-title{
-    //   text-align: left;
-  // }
+  .solutions .section-title {
+    margin-bottom: 50px;
+
+    text-align: left;
+  }
   .solutions-item {
     height: 396px;
     width: calc((100% - 3 * 20px) / 3);
@@ -104,6 +105,7 @@
     margin: 0 auto 30px;
   }
   .solutions-title {
+    // margin-bottom: 32px;
     font-size: 20px;
     line-height: calc(28 / 20);
   }
