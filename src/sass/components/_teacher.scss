@@ -68,11 +68,23 @@
     color: var(--second-color);
 }    
 
+.picture-certificate{
+    display: none;
+}
+
+.teacher-certificate-link:focus ~ .picture-certificate, 
+.teacher-certificate-link:active ~ .picture-certificate, 
+.picture-certificate:hover{
+    display: block;
+}
+
 .teacher-certificate-link{
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.67;
+ 
+    
 
     color: var(--accent-color);
     
@@ -82,6 +94,17 @@
         text-decoration: underline;
         color: var(--accent-color);   
     }
+
+    // a {
+    //     color: #3f51b5;
+    //     position: fixed;
+    //     top: -100%;
+        
+    //     &:focus {
+    //       top: 1rem;
+    //     }
+    //   }
+
 
 }
 
