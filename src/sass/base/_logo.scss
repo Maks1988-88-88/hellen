@@ -49,7 +49,7 @@
 
 @keyframes changeFill {
   0% {
-    fill: rgb(255, 98, 0);
+    fill: rgb(249, 164, 16);
   }
 
   25% {
@@ -57,15 +57,15 @@
   }
 
   50% {
-    fill: rgb(254, 4, 0);
+    fill: rgb(255, 7, 7);
   }
 
   75% {
-    fill: rgb(255, 98, 0);
+    fill: var(--accent-color);
   }
 
   100% {
-    fill: var(--accent-color);
+    fill: rgb(249, 164, 16);
   }
 }
 
