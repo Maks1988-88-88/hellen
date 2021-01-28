@@ -1,0 +1,255 @@
+.teacher{
+    background-color:var(--bc-grey-color);
+}
+
+.teacher-info{
+    display: block;
+}
+
+.teacher-name::after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: var(--second-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.teacher-achievements-item{
+    display: flex;
+    margin-bottom: 37px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+.teacher-achievements-icon{
+    max-width: 17px;
+    height: 14px;
+    fill:var(--accent-color);
+}
+
+.teacher-achievements-description{
+    padding-left: 9px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.214;
+    letter-spacing: 0.06em;
+
+     color: var(--main-color);
+}
+
+.teacher-cv::before {
+    display: block;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: var(--accent-color);
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.teacher-cv-item{
+    margin-bottom: 20px;
+    &:last-child{
+        margin-bottom: 10px;
+    }
+}    
+
+.teacher-cv-description{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+ 
+    color: var(--second-color);
+}    
+
+.picture-certificate{
+    display: none;
+}
+
+.teacher-certificate-link:focus ~ .picture-certificate, 
+.teacher-certificate-link:active ~ .picture-certificate, 
+.picture-certificate:hover{
+    display: block;
+}
+
+.teacher-certificate-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+ 
+    
+
+    color: var(--accent-color);
+    
+    text-decoration: underline;
+
+    &:hover, &:focus{
+        text-decoration: underline;
+        color: var(--accent-color);   
+    }
+
+    // a {
+    //     color: #3f51b5;
+    //     position: fixed;
+    //     top: -100%;
+        
+    //     &:focus {
+    //       top: 1rem;
+    //     }
+    //   }
+
+
+}
+
+@media screen and (min-width: 320px){
+.teacher{
+    margin: 0px;
+   
+    padding-top: 39px;
+    padding-bottom: 50px;
+}
+
+.teacher-title{
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+
+    color: var(--main-color);
+}
+
+.teacher-photo{
+    margin-bottom: 21px;
+}
+
+.teacher-name{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    color: var(--main-color);
+}
+
+.teacher-achievements-item{
+    display: flex;
+    margin-bottom: 40px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+}
+
+
+@media screen and (min-width: 768px){
+.teacher{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}    
+
+.teacher-container{
+    display: flex;
+}
+
+.teacher-photo{
+    max-width: 243px;
+    margin-bottom: 0px;
+    margin-right: 40px;
+}
+
+.teacher-info{
+    max-width: 402px;
+}
+
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 1354px){
+.teacher{
+    padding-top: 130px;
+    padding-bottom: 130px;
+} 
+
+.teacher-photo{
+    max-width: 530px;
+    margin-bottom: 0px;
+    margin-right: 30px;
+}
+
+.teacher-info{
+    max-width: 642px;
+}
+
+
+.teacher-title{
+    margin-bottom: 50px;
+
+    font-size: 46px;
+    line-height: 1.304;
+}
+
+
+.teacher-name{
+    font-size: 30px;
+    line-height: 1.23;
+}
+
+.teacher-name::after{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.teacher-achievements-item{
+    display: flex;
+    margin-bottom: 31px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+}
+
+.teacher-achievements-icon{
+    max-width: 24px;
+    height: 20px;
+}
+
+.teacher-achievements-description{
+    padding-left: 35px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+}
+
+.teacher-cv::before {
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+.teacher-cv-description{
+    font-size: 18px;
+    line-height: 1.56;
+}    
+
+.teacher-certificate-link{
+    font-size: 18px;
+    line-height: 1.56;
+}
+
+}
