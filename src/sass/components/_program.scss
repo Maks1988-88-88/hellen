@@ -160,3 +160,76 @@ body {
   line-height: 23px;
   letter-spacing: 0.08em;
 }
+
+//     -------tablet----------
+@media screen and (min-width: 768px) {
+  .section-program {
+    padding-bottom: 250px;
+  }
+  .program-title {
+    font-size: 26px;
+    text-align: left;
+
+    padding-top: 60px;
+    padding-left: 40px;
+  }
+  .program-list {
+    padding-left: 160px;
+    margin-bottom: 189px;
+  }
+  .program-list-title::before {
+    left: -68px;
+  }
+  .program-lesson-item::before {
+    height: 740px;
+    left: 97px;
+  }
+  .program-list-lesson {
+    display: flex;
+  }
+
+  .program-item:last-child {
+    .program-list-lesson {
+      display: block;
+    }
+  }
+
+  .program-advanteges-title {
+    font-size: 26px;
+    padding-top: 0px;
+    text-align: center;
+    min-width: 768px;
+  }
+
+  .container__advanteges {
+    width: 688px;
+    flex-wrap: wrap;
+    padding: 0px;
+    padding-bottom: 25px;
+    margin: 30px 40px 0 40px;
+  }
+  .program-list-advanteges {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .program-advanteges-item {
+    width: 236px;
+    padding-top: 30px;
+
+    &:nth-child(2n) {
+      margin-left: 20px;
+    }
+    &:nth-child(2n + 1) {
+      margin-left: 98px;
+    }
+  }
+  .program-sub-list {
+    width: 138px;
+    &:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+  .program-images {
+    top: 825px;
+  }
+}
