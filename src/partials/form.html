@@ -7,24 +7,29 @@
           <span class="form-text-part"> консультацию </span> по нюансам ЗНО по
           английскому языку
         </h3>
-        <form class="form" autocomplete="off">
-          <label class="form-label">
-            Оставь заявку на участие в
+        <p class="form-description"> Оставь заявку на участие в
             <span class="form-text-part"> бесплатном занятии. </span> С вами
-            свяжется консультант и ответит на вопросы
+            свяжется консультант и ответит на вопросы</p>
+        <form class="form" autocomplete="off">
+          <div class="form-field">
             <input
               class="form-input"
               type="name"
               name="name"
-              placeholder="Имя*"
-            />
+              id="name"
+              placeholder=" "
+            /> 
+             <label for="name" class="form-label">Имя*</label></div>
+            <div class="form-field">
             <input
               class="form-input"
               type="tel"
               name="nphone_number"
-              placeholder="Телефон*"
+              id="tel"
+              placeholder=" "
             />
-          </label>
+            <label for="tel" class="form-label">Телефон*</label>
+        </div>
           <button class="" type="submit">хочу на бесплатное занятие</button>
         </form>
       </div>
