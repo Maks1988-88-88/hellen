@@ -22,7 +22,6 @@ $(document).ready(function () {
     asNavFor: '.rev_slider',
     dots: true,
     centerMode: false,
-    
     focusOnSelect: true,
     variableWidth:false,
     arrows: true,
@@ -41,5 +40,6 @@ $(document).ready(function () {
        ]
 
   });
+  
 
 });
