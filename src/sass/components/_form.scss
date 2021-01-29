@@ -1,6 +1,7 @@
 .form-registration {
     padding: 50px 0;
-    background-image: linear-gradient(rgba(17, 21, 24, 0.8), rgba(17, 21, 24, 0.8)), url("../images/mobile/registration.jpg");
+    background-color: #111518;
+    background-image:  url("../images/mobile/registration.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,10 +12,12 @@
     line-height: 19.04px;
     @media screen and (min-width: 768px) {
         padding-bottom: 71px;
+        background-image: url("../images/tablet/registration.png");
     }
     @media screen and (min-width: 1354px) {
         padding-top: 100px;
         padding-bottom: 62px;
+        background-image:  url("../images/desktop/registration.png");
     }
 }
 .form-text-part {
@@ -63,7 +66,7 @@ text-indent: 10px;
 }
 }
 .form-input {
-    padding: 15px 0 16px 28px;
+    padding-left: 28px;
     max-width: 280px;
     width: 100%;
     height: 48px;
@@ -76,6 +79,7 @@ text-indent: 10px;
     &:focus, &:not(:placeholder-shown) {
         +.form-label {
             transform: translateY(-42px);
+            color: var(--accent-color);
         }
     }
     @media screen and (min-width: 768px) {
@@ -83,10 +87,19 @@ text-indent: 10px;
         width: 100%;
     }
      @media screen and (min-width: 1354px) {
+        padding-left: 40px;
         max-width: 478px;
         width: 100%;
+        height: 70px;
+        letter-spacing: 0.08em;
+        font-size: 20px;
+        &:focus, &:not(:placeholder-shown) {
+        +.form-label {
+            transform: translateY(-60px);
+        }
      }
      
+    }
 }
 .form-field {
     position: relative;
@@ -99,12 +112,13 @@ text-indent: 10px;
     @media screen and (min-width: 768px)  {
         display: inline-block;
         max-width: 390px;
-      &:first-child {
-        margin-bottom: 30px;
-    }
     }
      @media screen and (min-width: 1354px) {
-          max-width: 478px;
+        max-width: 478px;
+        letter-spacing: 0.08em;
+        &:first-child {
+        margin-bottom: 30px;
+    }
      }
 }
 .form-label {
@@ -112,9 +126,18 @@ text-indent: 10px;
     top: 50%;
     left: 28px;
     transform: translateY(-50%);
-   transition: transform 250ms;
-font-weight: 600;
-line-height: 1.214;
+    transition: all 250ms;
+    font-weight: 600;
+    line-height: 1.214;
+      @media screen and (min-width: 1354px) {
+        left: 40px;
+        font-size: 20px;
+        line-height: 1.2;
+        &:hover {
+            color: var(--accent-color);
+            border: var(--accent-color);
+        }
+     }
 }
 .form {
     display: flex;
@@ -127,7 +150,35 @@ line-height: 1.214;
           margin-top: 31px;
       }
        @media screen and (min-width: 1354px) {
-           margin-top: 80px;
+        margin-top: 80px;
+        line-height: 1.2;
        }
 }
 }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+      .form-registration {
+          background-image:  url("../images/mobile/registration@2x.png");
+        }
+    }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+      .form-registration {
+          background-image:  url("../images/tablet/registration@2x.png");
+        }
+    }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1354px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1354px),
+  screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 1354px),
+  screen and (min-resolution: 192dpi) and (min-width: 1354px),
+  screen and (min-resolution: 2dppx) and (min-width: 1354px) {
+       .form-registration {
+          background-image:  url("../images/desktop/registration@2x.png");
+        }
+    }
