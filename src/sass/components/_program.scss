@@ -1,0 +1,337 @@
+.section-program {
+  background-color: var(--main-color);
+  position: relative;
+  padding-bottom: 560px;
+}
+.section-advanteges {
+  position: absolute;
+}
+.container__advanteges {
+  display: flex;
+  background-color: var(--white-color);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  justify-content: center;
+  width: 280px;
+  margin: 30px 20px 0;
+  padding: 20px 14px 0 30px;
+}
+.program-title {
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  padding-top: 50px;
+}
+.program-list-title {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  text-align: left;
+
+  padding-top: 40px;
+}
+
+.program-lesson {
+  color: var(--accent-color);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.66;
+  letter-spacing: 0.08em;
+  text-align: left;
+
+  &:first-child {
+    padding-top: 5px;
+  }
+
+  &:not(:first-child) {
+    padding-top: 8px;
+  }
+}
+.program-lesson-item::before {
+  content: '';
+  width: 1px;
+  height: 1100px;
+  background-color: var(--white-color);
+  position: absolute;
+  top: 48px;
+  left: 94px;
+
+  display: flex;
+  flex-direction: column;
+  transform: rotate(180deg);
+}
+
+.program-list-title::before {
+  content: '';
+  z-index: 1;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+
+  position: absolute;
+  left: -31px;
+  bottom: 9px;
+}
+
+.program-lesson-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.66;
+
+  letter-spacing: 0.08em;
+
+  color: var(--second-color);
+
+  opacity: 0.5;
+
+  &:first-child {
+    padding-top: 5px;
+  }
+}
+
+.program-list-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.program-advanteges-item {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.43;
+
+  align-items: center;
+  letter-spacing: 0.08em;
+
+  color: var(--main-color);
+  padding-top: 20px;
+}
+
+.program-advanteges-title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+  padding-top: 50px;
+  padding-left: 20px;
+  width: 180px;
+}
+.program-list {
+  position: relative;
+  padding-left: 120px;
+}
+
+.program-images {
+  position: absolute;
+  right: 0px;
+  top: 1262px;
+  z-index: 1;
+}
+
+//сбрасывает значение счетчиков
+body {
+  counter-reset: section;
+}
+
+.program-advanteges-item::before {
+  display: flex;
+  padding-bottom: 10px;
+  counter-increment: section;
+  content: '—' counter(section) ' ';
+  color: var(--accent-color);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0.08em;
+}
+
+//     -------tablet----------
+@media screen and (min-width: 768px) {
+  .section-program {
+    padding-bottom: 250px;
+  }
+  .program-title {
+    font-size: 26px;
+    text-align: left;
+
+    padding-top: 60px;
+    padding-left: 40px;
+  }
+  .program-list {
+    padding-left: 160px;
+    margin-bottom: 189px;
+  }
+  .program-list-title::before {
+    left: -69px;
+  }
+  .program-lesson-item::before {
+    height: 740px;
+    left: 97px;
+  }
+  .program-list-lesson {
+    display: flex;
+  }
+
+  .program-item:last-child {
+    .program-list-lesson {
+      display: block;
+    }
+  }
+
+  .program-advanteges-title {
+    font-size: 26px;
+    padding-top: 0px;
+    text-align: center;
+    min-width: 768px;
+  }
+
+  .container__advanteges {
+    width: 688px;
+    flex-wrap: wrap;
+    padding: 0px;
+    padding-bottom: 25px;
+    margin: 30px 40px 0 40px;
+  }
+  .program-list-advanteges {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .program-advanteges-item {
+    width: 236px;
+    padding-top: 30px;
+
+    &:nth-child(2n) {
+      margin-left: 20px;
+    }
+    &:nth-child(2n + 1) {
+      margin-left: 98px;
+    }
+  }
+  .program-sub-list {
+    width: 138px;
+    &:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+  .program-images {
+    top: 825px;
+  }
+}
+@media screen and (min-width: 1354px) {
+  .section-program {
+    padding-bottom: 250px;
+  }
+  .program-title {
+    font-size: 46px;
+    line-height: 1.3;
+    padding-left: 184px;
+  }
+  .program-list-title {
+    font-size: 30px;
+    line-height: 0.93;
+    margin-top: 92px;
+  }
+  .program-lesson {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .program-list {
+    display: flex;
+    padding-left: 184px;
+    margin-bottom: 164px;
+  }
+  .program-lesson-item {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  .program-advanteges-title {
+    visibility: hidden;
+  }
+  .program-list-title::before {
+    content: '';
+    z-index: 1;
+
+    left: 0px;
+    top: 10px;
+  }
+  .program-lesson-item::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    top: 108px;
+    left: 0px;
+
+    transform: rotate(180deg);
+  }
+  .program-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+  }
+  .program-list-lesson {
+    display: flex;
+    flex-direction: column;
+  }
+  .program-sub-list {
+    &:not(:first-child) {
+      margin-left: 0px;
+    }
+  }
+
+  .program-images {
+    left: -88px;
+    top: 550px;
+    z-index: 0;
+  }
+  .program-sub-list {
+    min-width: 240px;
+  }
+  .program-list-advanteges {
+    padding: 70px 40px 70px 40px;
+    justify-content: center;
+  }
+  .container__advanteges {
+    display: block;
+    margin: 0 auto;
+    min-width: 1314px;
+    padding: 0 20px;
+    z-index: 1;
+  }
+  .program-advanteges-item {
+    font-size: 20px;
+    line-height: 1.2;
+    min-width: 356px;
+    margin-left: 0px;
+    margin-right: 40px;
+
+    &::before {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    &:nth-child(2n + 1) {
+      margin-left: 0px;
+    }
+    &:nth-child(2n) {
+      margin-left: 0px;
+    }
+  }
+  .section-advanteges {
+    position: absolute;
+    left: 20px;
+  }
+}
