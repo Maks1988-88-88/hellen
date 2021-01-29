@@ -103,6 +103,7 @@ background-color: var(--bc-section-color);
     padding-bottom: 30px;
     padding-left: 79px;
     padding-right: 50px;
+    max-width: 768px; 
 
     background-color: var(--bc-section-color);
 }
@@ -141,6 +142,8 @@ background-color: var(--bc-section-color);
     padding-bottom: 51px;
     padding-left: 120px;
     padding-right: 51px;
+
+    max-width: 1354px; 
 }
 
 .guarantees-list-icon{
