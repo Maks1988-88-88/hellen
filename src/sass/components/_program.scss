@@ -294,12 +294,12 @@ body {
   }
 
   .program-images {
-    display: flex;
-    object-fit: cover;
-    left: 0px;
-    bottom: 60px;
-
-    z-index: 0;
+    width: 672px;
+    height: 502px;
+    background-color: var(--main-color);
+    left: 0;
+    bottom: 40px;
+    z-index: 1;
   }
   .program-sub-list {
     min-width: 240px;
