@@ -1,0 +1,144 @@
+@media screen and (min-width: 320px){
+.guarantees-title-section{
+    margin: 0px;
+    background-color: var(--white-color);
+    padding-bottom: 10px;
+}
+
+.guarantees-title{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.31;
+    letter-spacing: 0.03em;
+
+    text-align: center;
+
+    color: var(--main-color);
+}
+
+.guarantees{
+    background-color: var(--bc-section-color);
+    padding: 30px 20px;
+}
+
+.guarantees-list-item{
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    
+}
+
+.guarantees-list-item:not(:last-child) {
+    border-left: 2px dotted var(--second-color);
+    margin-bottom: 23px;
+}
+
+.guarantees-list-icon{
+    max-width: 15px;
+    height: 20px;
+    fill: var(--accent-color);
+
+    transform: translateX(-60%);
+}
+
+.guarantees-list-description{
+    padding-left: 20px;
+
+    max-width: 265px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+
+    color: var(--content-color);
+}
+
+.guarantees-list-item-star,
+.guarantees-list-item-statistic{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.67;
+
+    color: var(--accent-color);
+}
+
+}
+
+
+@media screen and (min-width: 768px){
+.guarantees-title-section{
+    margin: 0px;
+    background-color: var(--white-color);
+    padding-bottom: 26px;
+}
+    .guarantees{
+    background-color: var(--white-color);
+}
+
+.guarantees-list-description{
+    padding-left: 25px;
+    max-width: 520px;
+    margin-bottom: 20px;
+}    
+
+.guarantees-list-item:not(:last-child) {
+    border-left: 2px dotted var(--second-color);
+    margin-bottom: 0px;
+}
+
+.guarantees-list{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 79px;
+    padding-right: 50px;
+
+    background-color: var(--bc-section-color);
+}
+
+
+}
+
+@media screen and (min-width: 1354px){
+.guarantees-title{
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 1.30;
+}
+
+.guarantees-list-description{
+    padding-left: 31px;
+    max-width: 1045px;
+    margin-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.guarantees-list-item-star,
+.guarantees-list-item-statistic{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.guarantees-list{
+    padding-top: 44px;
+    padding-bottom: 51px;
+    padding-left: 120px;
+    padding-right: 51px;
+}
+
+.guarantees-list-icon{
+    max-width: 22px;
+    height: 30px;
+    fill: var(--accent-color);
+
+    transform: translateX(-50%);
+}
+
+
+}    
