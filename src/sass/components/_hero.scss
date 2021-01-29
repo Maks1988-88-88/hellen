@@ -1,7 +1,11 @@
 .hero {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: var(--bc-section-color);
+  background-image: url('../images/tablet-png/wave.png');
+  background-color: var(--white-color);
+  background-repeat: no-repeat;
+  background-position: 14% 30%;
+  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
 }
 
 .hero-content {
@@ -46,6 +50,8 @@
   .hero {
     padding-top: 70px;
     padding-bottom: 75px;
+    background-size: cover;
+    background-position: 0 86%;
   }
 
   .hero-wrap {
@@ -73,10 +79,16 @@
 
 @media screen and (min-width: 1354px) {
   .hero {
-    position: relative;
     padding-top: 50px;
     padding-bottom: 240px;
     overflow: hidden;
+    background-image: url('../images/desktop-png/wave.png');
+    background-color: var(--white-color);
+    background-position: 25% 185%;
+  }
+
+  .hero-wrap {
+    position: relative;
   }
 
   .hero-content {
@@ -103,7 +115,7 @@
   .hero-image {
     position: absolute;
     width: 840px;
-    top: 45px;
-    left: 48%;
+    top: 0px;
+    left: 45%;
   }
 }
