@@ -1,8 +1,11 @@
 .slider-section {
-  max-width: 648px;
+  max-width: 380px;
   padding: 60px;
   margin-right: auto;
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 648px;
+  }
 }
 
 .slider-title {
@@ -149,9 +152,15 @@
 
   &:hover,
   &:focus {
+    cursor: pointer;
     border-radius: 50%;
     border: 3px solid #ff6b09;
   }
+}
+
+.slider-second .slick-current img {
+  border-radius: 50%;
+  border: 3px solid #ff6b09;
 }
 
 .slick-dotted.slick-slider {
