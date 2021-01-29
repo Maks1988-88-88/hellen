@@ -71,6 +71,11 @@
 
   .header-nav-link {
     color: currentColor;
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
 
