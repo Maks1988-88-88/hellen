@@ -44,5 +44,42 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <script src="./js/slide.js"></script>
     <script src="./js/readmore.js"></script>
+    <!-- <script>
+      $('article').readmore({ //вызов плагина
+        speed: 250, //скорость раскрытия скрытого текста (в миллисекундах)
+        maxHeight: 85, //высота раскрытой области текста (в пикселях)
+        heightMargin: 16, //избегание ломания блоков, которые больше maxHeight (в пикселях)
+        moreLink: '<a href="#">Читать далее</a>', //ссылка "Читать далее", можно переименовать
+        lessLink: '<a href="#">Скрыть</a>' //ссылка "Скрыть", можно переименовать
+      });
+    </script> -->
+    <!-- <script>
+      let checkIt = true;
+      //если chekIt оставить внутри 
+      //функции, то будет if всегда 
+      //выполняться
+
+
+      let readmore = document.getElementById("readmore");
+      readmore.addEventListener("click", readMore);
+
+      function readMore() {
+        let dots = document.getElementById("dots");
+        let more = document.getElementById("more");
+
+        if (checkIt) {
+          more.style.display = "inline";
+          dots.style.display = "none";
+          readmore.innerHTML = "Скрыть";
+          checkIt = false;
+        } else {
+          dots.style.display = "inline";
+          more.style.display = "none";
+          readmore.innerHTML = "Читать далее";
+          checkIt = true;
+        }
+
+      }
+    </script> -->
     </body>
 </html>
