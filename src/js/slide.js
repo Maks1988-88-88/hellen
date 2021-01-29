@@ -4,6 +4,8 @@ $(document).ready(function () {
     speed: 300,
     arrows: false,
       infinite: true,
+      autoplay: true,
+  autoplaySpeed: 7000,
        focusOnSelect: true,
       asNavFor: '.slider-second',
     responsive: [
