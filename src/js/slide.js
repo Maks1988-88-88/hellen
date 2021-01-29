@@ -6,6 +6,7 @@ $(document).ready(function () {
       infinite: true,
       autoplay: true,
   autoplaySpeed: 7000,
+
        focusOnSelect: true,
       asNavFor: '.slider-second',
     responsive: [
