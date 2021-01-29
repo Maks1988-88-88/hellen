@@ -5,7 +5,7 @@ $(document).ready(function () {
     arrows: false,
       infinite: true,
        autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 5000,
        focusOnSelect: true,
       asNavFor: '.slider-second',
     responsive: [
