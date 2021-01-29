@@ -23,7 +23,7 @@
   display: block;
   height: 48px;
   margin: 0 auto 20px;
-  fill: #ff6b09; /* accent  */
+  fill: #ff6b09;        /* accent  */
 }
 .solutions-title {
   font-size: 14px;
@@ -63,7 +63,7 @@
 // ========================== Tablet ==============================
 @media screen and (min-width: 768px) {
   .solutions {
-    padding-top: 205px;
+    padding-top: 185px;
   }
   .solutions-list {
     display: flex;
@@ -87,9 +87,8 @@
   }
 }
 // ========================== DT ==============================
-@media screen and (min-width: 1353px) {
+@media screen and (min-width: 1354px) {
   .solutions {
-    // margin-top: 140px;
     padding-top: 275px;
   }
   .solutions .section-title {
@@ -105,7 +104,6 @@
     margin: 0 auto 30px;
   }
   .solutions-title {
-    // margin-bottom: 32px;
     font-size: 20px;
     line-height: calc(28 / 20);
   }
