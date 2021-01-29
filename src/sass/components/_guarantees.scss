@@ -20,6 +20,9 @@ background-color: var(--white-color);
 }
 
 .guarantees-list-box{
+    margin-left: auto;
+    margin-right: auto;
+
     background-color: var(--bc-section-color)
 }
 
@@ -27,7 +30,6 @@ background-color: var(--white-color);
 margin: 0px;
 padding: 30px 20px;
 min-width: 320px;
-max-width: 767px;
 
 background-color: var(--bc-section-color);
 }
