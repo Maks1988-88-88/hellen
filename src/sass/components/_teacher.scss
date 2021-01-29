@@ -1,5 +1,5 @@
 .teacher{
-    background-color:var(--bc-grey-color);
+    background-color:var(--white-color);
 }
 
 .teacher-info{
@@ -94,18 +94,6 @@
         text-decoration: underline;
         color: var(--accent-color);   
     }
-
-    // a {
-    //     color: #3f51b5;
-    //     position: fixed;
-    //     top: -100%;
-        
-    //     &:focus {
-    //       top: 1rem;
-    //     }
-    //   }
-
-
 }
 
 @media screen and (min-width: 320px){
@@ -172,9 +160,6 @@
 .teacher-info{
     max-width: 402px;
 }
-
-
-
 
 }
 
