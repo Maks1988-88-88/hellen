@@ -1,5 +1,4 @@
 .slider-section {
-  background-color: #436eab;
   max-width: 648px;
   padding: 60px;
   margin-right: auto;
@@ -32,7 +31,7 @@
   padding: 15px;
   margin-left: auto;
   margin-right: auto;
-  background: #ffffff;
+
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
   @media screen and (min-width: 768px) {
     display: flex;
@@ -70,11 +69,10 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 26px;
+
   text-align: center;
   fill: #436eab;
   width: 30px;
-  height: 17px;
 }
 
 .slider-text-list {
@@ -101,6 +99,11 @@
   letter-spacing: 0.08em;
 
   color: #ff6b09;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }
 
 .slider-text_about {
@@ -110,6 +113,7 @@
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.08em;
+  text-align: center;
 
   color: #b9b9b9;
 }
@@ -159,19 +163,19 @@
   }
 }
 
-#more {
-  display: none;
-}
+// #more {
+//   display: none;
+// }
 
-.readmore {
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  margin-top: 10px;
-  padding: 10px;
-  width: 120px;
-}
+// .readmore {
+//   background: transparent;
+//   border: 2px solid #fff;
+//   color: #fff;
+//   margin-top: 10px;
+//   padding: 10px;
+//   width: 120px;
+// }
 
-.readmore:hover {
-  transform: scale(1.1) translateX(7px);
-}
+// .readmore:hover {
+//   transform: scale(1.1) translateX(7px);
+// }

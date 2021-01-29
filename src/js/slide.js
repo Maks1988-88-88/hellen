@@ -25,7 +25,8 @@ $(document).ready(function () {
     focusOnSelect: true,
     variableWidth:false,
     arrows: true,
-    infinite: false,
+    infinite: true,
+    
     
 
     responsive: [

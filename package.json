@@ -6,7 +6,7 @@
   "homepage": "https://Maks1988-88-88.github.io/hellen",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html",
+    "build": "web src/*.html",
     "predeploy": "npm run build -- --public-url /hellen/",
     "deploy": "gh-pages -d dist",
     "build": "webpack"
@@ -23,17 +23,18 @@
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
+    "gulp": "^4.0.2",
     "parcel-bundler": "^1.12.4",
     "posthtml-include": "^1.4.3",
-    "sass": "^1.26.9"
+    "sass": "^1.26.9",
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0"
   },
   "dependencies": {
     "jquery": "^3.5.1",
     "read-more-less": "^1.1.1",
     "readmore-js": "^3.0.0-beta-1",
     "slick": "^1.12.2",
-    "slick-carousel": "^1.8.1",
-    "webpack": "^5.18.0",
-    "webpack-cli": "^4.4.0"
+    "slick-carousel": "^1.8.1"
   }
 }
