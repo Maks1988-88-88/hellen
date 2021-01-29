@@ -1,7 +1,7 @@
 .advantages {
   display: flex;
   padding-bottom: 50px;
-  background-color: var(--bc-section-color);
+  background-color: var(--white-color);
 }
 
 .advantages-list {
@@ -35,7 +35,7 @@
     display: inline-block;
     width: 10px;
     height: 40px;
-    background-color: var(--bc-section-color);
+    background-color: var(--white-color);
   }
 }
 
@@ -70,7 +70,8 @@
 
 @media screen and (min-width: 1354px) {
   .advantages {
-    padding-top: 93px;
+    // padding-top: 93px;
+    background-color: var(--white-color);
     padding-bottom: 130px;
   }
 
@@ -92,7 +93,7 @@
     &::before {
       width: 10px;
       height: 65px;
-      background-color: var(--bc-section-color);
+      background-color: var(--white-color);
     }
   }
 
@@ -107,6 +108,6 @@
     line-height: 1.64;
     padding-right: 30px;
     margin-left: -18px;
-    background-color: var(--bc-section-color);
+    background-color: var(--white-color);
   }
 }
