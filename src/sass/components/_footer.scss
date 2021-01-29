@@ -94,7 +94,8 @@ margin-right: 412px;
     background: radial-gradient(110.28% 110.28% at 20.5% 87.39%, #FAE100 0%, #FADC04 5.44%, #FBCE0E 11.67%, #FCB720 18.29%, #FE9838 25.14%, #FF7950 30.54%, #FF1C74 49.22%, #6C1CD1 100%);
 @media screen and (min-width: 768px) {
         margin-left: 24px;}
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             transform: scale3d(1.75, 1.75, 0.5);
         }
 }
