@@ -28,7 +28,7 @@ background-color: var(--white-color);
 
 .guarantees-list{
 margin: 0px;
-padding: 30px 20px;
+padding: 30px 0px;
 max-width: 320px; 
 
 
@@ -41,19 +41,29 @@ background-color: var(--bc-section-color);
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
+    
 }
 
 .guarantees-list-item:not(:last-child) {
-    border-left: 2px dotted var(--second-color);
-    margin-bottom: 23px;
+    padding-bottom: 23px;
 }
 
 .guarantees-list-icon{
     max-width: 15px;
     height: 20px;
     fill: var(--accent-color);
+    margin-bottom: 20px;
 
-    transform: translateX(-60%);
+    transform: translateX(60%);
+}
+
+.guarantees-list-icon-cont{
+    display: block;
+}
+.guarantees-list-icon-cont::after{
+content: "";
+padding-bottom: 50px;
+border-left: 2px dotted var(--second-color);
 }
 
 .guarantees-list-description{
@@ -89,19 +99,22 @@ background-color: var(--bc-section-color);
 }
 .guarantees-list-description{
     padding-left: 25px;
-    max-width: 520px;
-    margin-bottom: 20px;
+    max-width: 545px;
 }    
-
-.guarantees-list-item:not(:last-child) {
-    border-left: 2px dotted var(--second-color);
+n
+.guaratees-list-item:not(:last-child) {
     margin-bottom: 0px;
+}
+
+.guarantees-list-icon-cont::after {
+    content: "";
+    padding-bottom: 15px;
 }
 
 .guarantees-list{
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-left: 79px;
+    padding-left: 59px;
     padding-right: 50px;
     max-width: 768px; 
 
@@ -120,10 +133,13 @@ background-color: var(--bc-section-color);
     margin-bottom: 56px;
 }
 
+.guarantees-list-item:not(:last-child) {
+    padding-bottom: 20px;
+}
+
 .guarantees-list-description{
     padding-left: 31px;
     max-width: 1045px;
-    margin-bottom: 20px;
 
     font-weight: 500;
     font-size: 20px;
@@ -151,7 +167,7 @@ background-color: var(--bc-section-color);
     height: 30px;
     fill: var(--accent-color);
 
-    transform: translateX(-50%);
+    transform: translateX(50%);
 }
 
 
