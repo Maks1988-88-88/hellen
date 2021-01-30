@@ -247,6 +247,15 @@ body {
   .section-program {
     padding: 0;
     padding-bottom: 372px;
+    &::before {
+      content: '-';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 284px;
+      background-color: var(--white-color);
+      height: 1px;
+    }
   }
   .program-title {
     padding: 120px 0 0 0;
@@ -288,12 +297,7 @@ body {
   }
   .program-lesson-item::before {
     content: '';
-    width: 1600px;
-    height: 1px;
-    top: 5px;
-    left: -183px;
-
-    transform: rotate(180deg);
+    display: none;
   }
   .program-item {
     display: flex;
