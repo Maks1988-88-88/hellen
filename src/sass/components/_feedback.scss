@@ -1,5 +1,6 @@
 .slider-section {
   max-width: 380px;
+  padding-top: 50px;
   //padding: 10px 60px;
   margin-right: auto;
   margin-left: auto;
@@ -9,6 +10,7 @@
   @media screen and (min-width: 1353px) {
     //max-width: 800px;
     max-width: 1258px;
+    padding-top: 124px;
 
   }
 }
@@ -23,13 +25,18 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-top: 10px;
-  margin-bottom: 40px;
+  
+  margin-bottom: 30px;
 
   color: #111518;
   @media screen and (min-width: 768px) {
     font-size: 26px;
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1353px) {
+    margin-bottom: 50px;
+
   }
 }
 
@@ -191,8 +198,8 @@
   }
 }
 
-.slick-initialized .slick-slide {
-
+.more{
+  color: var(--accent-color);
 }
 
 // #more {
