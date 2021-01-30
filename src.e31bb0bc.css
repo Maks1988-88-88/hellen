@@ -2701,13 +2701,6 @@ body {
 }
 
 /* Icons */
-@font-face {
-  font-family: "slick";
-  src: url("/slick.da8efe09.eot");
-  src: url("/slick.da8efe09.eot?#iefix") format("embedded-opentype"), url("/slick.60f7b7e2.woff") format("woff"), url("/slick.c5074a08.ttf") format("truetype"), url("/slick.9a3ed3e9.svg#slick") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -2774,7 +2767,7 @@ body {
 }
 .slick-prev:before,
 .slick-next:before {
-  font-family: "slick";
+  font-family: FontAwesome;
   font-size: 40px;
   line-height: 1;
   color: #ff6b09;
@@ -2882,7 +2875,7 @@ body {
   content: "•";
   width: 20px;
   height: 20px;
-  font-family: "slick";
+  font-family: FontAwesome;
   font-size: 6px;
   line-height: 20px;
   text-align: center;
