@@ -288,10 +288,10 @@ body {
   }
   .program-lesson-item::before {
     content: '';
-    width: 1000vh;
+    width: 1600px;
     height: 1px;
     top: 5px;
-    left: -100vh;
+    left: -183px;
 
     transform: rotate(180deg);
   }
