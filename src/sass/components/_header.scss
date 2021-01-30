@@ -36,11 +36,15 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 37px;
+    padding-top: 40px;
   }
 }
 
 @media screen and (min-width: 1354px) {
+  .header {
+    padding-top: 34px;
+  }
+
   .header-nav-list {
     display: flex;
     color: var(--second-color);
@@ -143,7 +147,7 @@
 
 @media screen and (min-width: 768px) {
   .modal-close-btn {
-    top: 53px;
+    top: 56px;
     right: 43px;
   }
 
