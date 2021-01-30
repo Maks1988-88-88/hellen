@@ -1,0 +1,79 @@
+<header class="header">
+    <div class="container">
+        <nav class="header-navigation">
+            <a href="./index.html" class="logo link" aria-label="Логотип сайта">
+                <p class="logo-title">Hell
+                    <svg class="logo-icon">
+                        <use href="./images/vector/sprite.svg#icon-fire"></use>
+                    </svg>
+                    EN
+                </p>
+                <span class="logo-desc"> <span class="logo-desc-accent">Адский</span> английский</span>
+            </a>
+
+            <ul class="header-nav-list">
+                <li class="header-nav-item">
+                    <a href="./index.html#program" class="header-nav-link">Программа обучения</a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="./index.html#teacher" class="header-nav-link">О нас</a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="./index.html#solutions" class="header-nav-link">Варианты обучения</a>
+                </li>
+                <li class="header-nav-item">
+                    <a href="./index.html#footer" class="header-nav-link">Контакты</a>
+                </li>
+            </ul>
+            
+            <button type="button" class="main-button header-main-btn">Консультация по телефону</button>
+            
+            <button type="button" class="header-menu-btn" data-modal-open>
+                <svg class="menu-icon" width="22" height="16" aria-expanded="false" aria-controls="menu-content"
+                    aria-label="Кнопка мобильного меню">
+                    <use href="./images/vector/sprite.svg#icon-menu" class="header-icon-menu"></use>
+                    <!-- <use href="./images/vector/sprite.svg#icon-cross" class="header-icon-cross"></use> -->
+                </svg>
+            </button>
+       
+        </nav>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="container">
+            <a href="./index.html" class="logo logo-dark-them" aria-label="Логотип сайта">
+                <p class="logo-title">Hell
+                    <svg class="logo-icon">
+                        <use href="./images/vector/sprite.svg#icon-fire"></use>
+                    </svg>
+                    EN
+                </p>
+                <span class="logo-desc"> <span class="logo-desc-accent">Адский</span> английский</span>
+            </a>
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="close-btn-icon" width="15" height="15" aria-label="Кнопка закрытия мобильного меню">
+                    <use href="./images/vector/sprite.svg#icon-cross" class="header-icon-cross"></use>
+                </svg>
+            </button>
+    
+            <div class="modal-nav">
+                <ul class="modal-menu-list">
+                    <li class="modal-nav-item">
+                        <a href="./index.html#program" class="modal-nav-link">Программа обучения</a>
+                    </li>
+                    <li class="modal-nav-item">
+                        <a href="./index.html#teacher" class="modal-nav-link">О нас</a>
+                    </li>
+                    <li class="modal-nav-item">
+                        <a href="./index.html#solutions" class="modal-nav-link">Варианты обучения</a>
+                    </li>
+                    <li class="modal-nav-item">
+                        <a href="./index.html#footer" class="modal-nav-link">Контакты</a>
+                    </li>
+                </ul>
+    
+                <button type="button" class="main-button modal-button">Консультация по телефону</button>
+            </div>
+        </div>
+    </div>
+</header>
