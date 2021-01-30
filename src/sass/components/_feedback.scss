@@ -1,13 +1,15 @@
 .slider-section {
   max-width: 380px;
-  padding: 10px 60px;
+  //padding: 10px 60px;
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: 768px) {
     max-width: 648px;
   }
   @media screen and (min-width: 1353px) {
-    max-width: 800px;
+    //max-width: 800px;
+    max-width: 1258px;
+
   }
 }
 .slider-title {
@@ -187,6 +189,10 @@
     margin-right: auto;
     margin-left: auto;
   }
+}
+
+.slick-initialized .slick-slide {
+
 }
 
 // #more {
