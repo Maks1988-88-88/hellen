@@ -14,8 +14,9 @@
 
   }
 }
+
 .slider-title {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -58,7 +59,7 @@
 
   @media screen and (min-width: 768px) {
     margin-right: 15px;
-    margin-left: auto;
+    //margin-left: auto;
   }
 }
 
@@ -100,6 +101,10 @@
   @media screen and (max-width: 767px) {
     text-align: center;
   }
+  @media screen and (min-width: 1354px) {
+    //padding: 15px 175px;
+    width: 706px;
+  }
 }
 
 .slider-text-list .item {
@@ -114,7 +119,7 @@
 }
 
 .slider-name {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -130,7 +135,7 @@
 }
 
 .slider-text_about {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -141,7 +146,7 @@
 }
 
 .slider-text_review {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;

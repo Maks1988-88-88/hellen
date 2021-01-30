@@ -122,7 +122,21 @@ $slick-opacity-not-active: 0.25 !default;
       content: $slick-next-character;
     }
   }
+
 }
+
+@media screen and (min-width: 1354px) {
+  .slick-prev {
+    //left: -85px;
+  }
+}
+
+@media screen and (min-width: 1354px) {
+  .slick-next {
+    //left: -85px;
+  }
+}
+
 
 .slick-next {
   right: -15px;
