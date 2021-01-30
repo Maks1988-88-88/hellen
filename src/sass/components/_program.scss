@@ -14,6 +14,10 @@
   width: 280px;
   margin: 30px 0 0 0;
   padding: 20px 14px 20px 30px;
+}
+.program-lesson-line {
+  font-size: 20px;
+  line-height: 1.45;
 
 }
 .program-title {
@@ -56,12 +60,14 @@
 .program-lesson-item::before {
   content: '';
   width: 1px;
-  height: 1115px;
+  height: 1200px;
+
 
   background-color: var(--white-color);
   position: absolute;
   top: 48px;
-  left: 94px;
+  left: 74px;
+
 
   display: flex;
   flex-direction: column;
@@ -132,15 +138,8 @@
 }
 .program-list {
   position: relative;
-  padding-left: 120px;
-}
+  padding-left: 100px;
 
-.program-images {
-  position: absolute;
-  right: 0px;
-  top: 1292px;
-
-  z-index: 1;
 }
 
 //сбрасывает значение счетчиков
@@ -152,7 +151,8 @@ body {
   display: flex;
   padding-bottom: 10px;
   counter-increment: section;
-  content: '—' counter(section) ' ';
+  content: '— 0' counter(section) ' ';
+
   color: var(--accent-color);
 
   font-size: 14px;
@@ -161,6 +161,14 @@ body {
   line-height: 23px;
   letter-spacing: 0.08em;
 }
+.program-images {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    position: absolute;
+    bottom: 460px;
+    right: 0px;
+  }
+}
+
 
 //     -------tablet----------
 @media screen and (min-width: 768px) {
@@ -182,9 +190,8 @@ body {
     left: -69px;
   }
   .program-lesson-item::before {
-    height: 740px;
+    height: 770px;
     left: 56px;
-
   }
   .program-list-lesson {
     display: flex;
@@ -235,13 +242,19 @@ body {
     }
   }
   .program-images {
-    top: 825px;
+    @media screen and (min-width: 768px) and (max-width: 1353px) {
+      position: absolute;
+      top: 825px;
+      right: 0px;
+    }
+
   }
 }
 @media screen and (min-width: 1354px) {
   .section-program {
     padding: 0;
-    padding-bottom: 164px;
+    padding-bottom: 372px;
+
   }
   .program-title {
     padding: 120px 0 0 0;
@@ -252,7 +265,7 @@ body {
   .program-list-title {
     font-size: 30px;
     line-height: 0.93;
-    margin-top: 92px;
+
   }
   .program-lesson {
     font-size: 20px;
@@ -261,6 +274,8 @@ body {
   .program-list {
     display: flex;
     padding-left: 0px;
+    margin-top: 92px;
+    margin-bottom: 0;
 
   }
   .program-lesson-item {
@@ -268,7 +283,8 @@ body {
     line-height: 1.55;
   }
   .program-advanteges-title {
-    visibility: hidden;
+    display: none;
+
   }
   .program-list-title::before {
     content: '';
@@ -279,10 +295,11 @@ body {
   }
   .program-lesson-item::before {
     content: '';
-    width: 100%;
+    width: 1000vh;
     height: 1px;
-    top: 108px;
-    left: 0px;
+    top: 15px;
+    left: -100vh;
+
 
     transform: rotate(180deg);
   }
@@ -302,11 +319,12 @@ body {
   }
 
   .program-images {
+    position: absolute;
     width: 672px;
     height: 502px;
     background-color: var(--main-color);
-    left: -88px;
-    top: 558px;
+    left: -211px;
+    bottom: -337px;
 
     z-index: 0;
   }
@@ -344,7 +362,10 @@ body {
     }
   }
   .section-advanteges {
-    bottom: -199px;
+    bottom: -217px;
+  }
+  .container .images {
+    position: relative;
 
   }
 }
