@@ -1,116 +1,118 @@
+.colorize {
+  color: var(--main-color);
+}
+
 .solutions {
   padding-bottom: 50px;
   padding-top: 225px;
-}
-.colorize {
-  color: #111518;
-} //                Утилита!      рассмотреть внесение цвета в base
-.solutions .section-title {
-  margin-bottom: 30px;
 
-  text-align: center;
-}
-.solutions-item {
-  height: 280px;
-  padding-top: 30px;
-
-  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
-}
-.solutions-item:not(:last-child) {
-  margin-bottom: 15px;
-}
-.solutions-icon {
-  display: block;
-  height: 48px;
-  margin: 0 auto 20px;
-  fill: #ff6b09;        /* accent  */
-}
-.solutions-title {
-  font-size: 14px;
-  line-height: calc(20 / 14);
-  text-align: center;
-  letter-spacing: 0.08em;
-}
-.solutions-dash {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: calc(33 / 20);
-  text-align: center;
-}
-.solutions-text {
-  padding: 0 7px;
-
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: calc(20 / 12);
-  text-align: center;
-  letter-spacing: 0.08em;
-
-  color: #b9b9b9; //   by maket
-}
-.solutions-item:hover {
-  background-color: #ff6b09;
-  & .solutions-title,
-  & .solutions-dash,
-  & .solutions-text {
-    color: #fff;
+  & .section-title {
+    margin-bottom: 30px;
+    text-align: center;
   }
-  & .solutions-icon {
-    fill: #fff;
+  &-item {
+    height: 280px;
+    padding-top: 30px;
+    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+    transition: 500ms;
+  }
+  &-item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+  &-icon {
+    display: block;
+    height: 48px;
+    margin: 0 auto 20px;
+    fill: var(--accent-color);
+  }
+  &-title {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    text-align: center;
+    letter-spacing: 0.08em;
+  }
+  &-dash {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: calc(33 / 20);
+    text-align: center;
+  }
+  &-text {
+    padding: 0 7px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(20 / 12);
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: var(--second-color);
+  }
+  &-item:hover {
+    background-color: var(--accent-color);
+    & .solutions-title,
+    & .solutions-dash,
+    & .solutions-text {
+      color: var(--white-color);
+    }
+    & .solutions-icon {
+      fill: var(--white-color);
+    }
   }
 }
 // ========================== Tablet ==============================
 @media screen and (min-width: 768px) {
   .solutions {
     padding-top: 185px;
-  }
-  .solutions-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -10px;
-  }
-  .solutions-item {
-    padding-top: 40px;
-    margin: 10px;
-    height: 334px;
-    width: calc((100% - 2 * 20px) / 2);
-  }
-  .solutions-icon {
-    margin: 0 auto 20px;
-  }
-  .solutions-dash{
-    margin: 10px 0;
-  }
-  .solutions-text {
-    padding: 0 21px;
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: calc((-1) * var(--card-set-gap) / 2);
+    }
+    &-item {
+      padding-top: 40px;
+      margin: calc(var(--card-set-gap) / 2);
+      height: 334px;
+      width: calc((100% - 2 * var(--card-set-gap)) / 2);
+    }
+    &-icon {
+      margin: 0 auto 20px;
+    }
+    &-dash {
+      margin: 10px 0;
+    }
+    &-text {
+      padding: 0 21px;
+    }
   }
 }
 // ========================== DT ==============================
 @media screen and (min-width: 1354px) {
   .solutions {
     padding-top: 275px;
-  }
-  .solutions .section-title {
-    margin-bottom: 50px;
 
-    text-align: left;
-  }
-  .solutions-item {
-    height: 396px;
-    width: calc((100% - 3 * 20px) / 3);
-  }
-  .solutions-icon {
-    margin: 0 auto 30px;
-  }
-  .solutions-title {
-    font-size: 20px;
-    line-height: calc(28 / 20);
-  }
-  .solutions-text {
-    padding: 0 26px;
-
-    font-size: 18px;
-    line-height: calc(28 / 18);
+    &.section-title {
+      margin-bottom: 50px;
+      text-align: left;
+    }
+    &-item {
+      height: 396px;
+      width: calc((100% - 3 * var(--card-set-gap)) / 3);
+    }
+    &-icon {
+      margin: 0 auto 30px;
+    }
+    &-title {
+      font-size: 20px;
+      line-height: calc(28 / 20);
+    }
+    &-text {
+      padding: 0 26px;
+      font-size: 18px;
+      line-height: calc(28 / 18);
+    }
   }
 }
