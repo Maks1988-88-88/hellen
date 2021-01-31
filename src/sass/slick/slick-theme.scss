@@ -81,10 +81,10 @@ $slick-opacity-not-active: 0.25 !default;
   border: none;
   outline: none;
   @media screen and (min-width: 768px) {
-    top: -600%;
-    -webkit-transform: translate(0, 600%);
-    -ms-transform: translate(0, 600%);
-    transform: translate(0, 600%);
+    top: -720%;
+    -webkit-transform: translate(0, 720%);
+    -ms-transform: translate(0, 720%);
+    transform: translate(0, 720%);
   }
   @media screen and (min-width: 1354px) {
     top: -600%;
