@@ -13,8 +13,8 @@ $slick-loader-path: './' !default;
 $slick-arrow-color: #ff6b09 !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: '\1F814';
-$slick-next-character: '\1F816';
+$slick-prev-character: '';
+$slick-next-character: '';
 $slick-dot-character: '\2022' !default;
 $slick-dot-size: 6px !default;
 $slick-opacity-default: 0.75 !default;
@@ -81,22 +81,22 @@ $slick-opacity-not-active: 0.25 !default;
   border: none;
   outline: none;
   @media screen and (min-width: 768px) {
-    top: -500%;
-    -webkit-transform: translate(0, 500%);
-    -ms-transform: translate(0, 500%);
-    transform: translate(0, 500%);
+    top: -600%;
+    -webkit-transform: translate(0, 600%);
+    -ms-transform: translate(0, 600%);
+    transform: translate(0, 600%);
   }
   @media screen and (min-width: 1354px) {
-    top: -500%;
-    -webkit-transform: translate(0, 500%);
-    -ms-transform: translate(0, 500%);
-    transform: translate(0, 500%);
+    top: -600%;
+    -webkit-transform: translate(0, 600%);
+    -ms-transform: translate(0, 600%);
+    transform: translate(0, 600%);
   }
   @media screen and (max-width: 767px) {
-    top: 15%;
-    -webkit-transform: translate(0, 15%);
-    -ms-transform: translate(0, 15%);
-    transform: translate(0, 15%);
+    top: 25%;
+    -webkit-transform: translate(0, 25%);
+    -ms-transform: translate(0, 25%);
+    transform: translate(0, 25%);
   }
 
   &:hover,
