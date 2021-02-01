@@ -1,0 +1,31 @@
+.arrow-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+
+  margin: 0;
+  padding: 0px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+
+  background-image: url(../images/vector/svg/arrow-up.svg);
+  background-color: var(--accent-color);
+  background-size: cover;
+  fill: currentColor;
+
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 30px;
+    height: 30px;
+    border: 5px solid var(--accent-color);
+  }
+  @media screen and (min-width: 1354px) {
+    width: 40px;
+    height: 40px;
+  }
+}
