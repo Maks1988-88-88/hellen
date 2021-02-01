@@ -47,7 +47,6 @@ background-color: var(--bc-section-color);
 .guarantees-list-item:not(:last-child) {
     padding-bottom: 23px;
 }
-
 .guarantees-list-icon{
     max-width: 15px;
     height: 20px;
@@ -55,7 +54,33 @@ background-color: var(--bc-section-color);
     margin-bottom: 20px;
 
     transform: translateX(60%);
+
+    
+  animation: changeFillfire 4000ms infinite 1000ms;
 }
+
+
+@keyframes changeFillfire {
+    0% {
+      fill: rgb(249, 164, 16);
+    }
+  
+    25% {
+      fill: var(--accent-color);
+    }
+  
+    50% {
+      fill: rgb(255, 7, 7);
+    }
+  
+    75% {
+      fill: var(--accent-color);
+    }
+  
+    100% {
+      fill: rgb(249, 164, 16);
+    }
+  }
 
 .guarantees-list-icon-cont{
     display: block;

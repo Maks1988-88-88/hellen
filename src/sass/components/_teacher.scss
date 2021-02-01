@@ -76,7 +76,17 @@
 .teacher-certificate-link:active ~ .picture-certificate, 
 .picture-certificate:hover{
     display: block;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-name: slidegdz-cert;
+    animation-fill-mode: forwards;
 }
+
+@keyframes slidegdz-cert {
+    0% { width: 10%; }
+    100% { width: 80%; }
+}
+
 
 .teacher-certificate-link{
     font-style: normal;
