@@ -22,10 +22,7 @@
   width: 14px;
   height: 19px;
 
-  animation-name: changeFill;
-  animation-duration: 3000ms;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation: changeFill 4000ms infinite 1000ms;
 }
 
 .logo-desc {
@@ -50,6 +47,7 @@
 @keyframes changeFill {
   0% {
     fill: rgb(249, 164, 16);
+    transform: scale(1);
   }
 
   25% {
@@ -58,6 +56,7 @@
 
   50% {
     fill: rgb(255, 7, 7);
+    transform: scale(1.25);
   }
 
   75% {
@@ -66,6 +65,7 @@
 
   100% {
     fill: rgb(249, 164, 16);
+    transform: scale(1);
   }
 }
 
