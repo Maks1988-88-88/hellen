@@ -47,3 +47,8 @@ img {
   max-width: 100%; /*растягивание не шире, чем оригинальный размер*/
   height: auto;
 }
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
