@@ -56,11 +56,11 @@ background-color: var(--bc-section-color);
     transform: translateX(60%);
 
     
-  animation: changeFill 4000ms infinite 1000ms;
+  animation: changeFillfire 4000ms infinite 1000ms;
 }
 
 
-@keyframes changeFill {
+@keyframes changeFillfire {
     0% {
       fill: rgb(249, 164, 16);
     }
